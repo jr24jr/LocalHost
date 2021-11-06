@@ -1,5 +1,4 @@
-<!DOCTYPE html>  
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,7 +58,7 @@ foreach ($carpeta as  $valor) {
 foreach ($files as  $valor) {
 	if($valor['ruta']!='index.php'){
 		echo "<div class='col-4 mt-3 mb-3'><div class='card bg-transparent'>";
-		if($valor['tipo']=="png" || $valor['tipo']=="jpg" || $valor['tipo']=="svg" || $valor['tipo']=="ico"){
+		if($valor['tipo']=="png" || $valor['tipo']=="jpg" || $valor['tipo']=="jpeg" || $valor['tipo']=="svg" || $valor['tipo']=="ico" || $valor['tipo']=="bmp" || $valor['tipo']=="gif" || $valor['tipo']=="webp"){
 			echo '<div class="align-self-center">
 				<a href="/'.$valor['ruta'].'">
 					<img class="card-img-top" src="'.$valor['ruta'].'" style="width: 10rem;">
